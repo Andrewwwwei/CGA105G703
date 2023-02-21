@@ -1,0 +1,59 @@
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+--
+-- Host: localhost    Database: cga105_g7
+-- ------------------------------------------------------
+-- Server version	8.0.30
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `article_reply`
+--
+
+DROP TABLE IF EXISTS `article_reply`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `article_reply` (
+  `ART_REPLY_ID` int NOT NULL AUTO_INCREMENT,
+  `ART_ID` int NOT NULL,
+  `USER_ID` int NOT NULL,
+  `REPLY_CONTENT` varchar(800) NOT NULL,
+  `REPLY_TIME` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `REPLY_STATUS` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ART_REPLY_ID`),
+  KEY `FK_ARTID_ART_REPLY` (`ART_ID`),
+  KEY `FK_USERID_ARTREPLY` (`USER_ID`),
+  CONSTRAINT `FK_ARTID_ART_REPLY` FOREIGN KEY (`ART_ID`) REFERENCES `article` (`ART_ID`),
+  CONSTRAINT `FK_USERID_ARTREPLY` FOREIGN KEY (`USER_ID`) REFERENCES `users` (`USER_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `article_reply`
+--
+
+LOCK TABLES `article_reply` WRITE;
+/*!40000 ALTER TABLE `article_reply` DISABLE KEYS */;
+INSERT INTO `article_reply` VALUES (1,1,1,'這篇文章很實用~~','2023-02-11 18:04:40',0),(2,1,2,'想動手整理行李了~~','2023-02-11 18:04:40',0),(3,1,3,'我覺得還不錯,但可以給更細節點的步驟@@','2023-02-11 18:04:40',0),(4,1,4,'欸這篇文章有讚','2023-02-11 18:04:40',0),(5,2,5,'澎湖美到炸~~ 要去吃仙草冰~~','2023-02-11 18:04:40',1),(6,2,1,'人生第一次吃到煙燻蛋，就在那~~~','2023-02-11 18:04:40',0),(7,2,2,'老地方排骨麵的乾麵!!! 乾麵的麵體我的菜~~','2023-02-11 18:04:40',0),(8,2,3,'懷念~~~','2023-02-11 18:04:40',0),(9,2,4,'外婆的澎湖灣','2023-02-11 18:04:40',0),(10,2,5,'笑死 澎湖有好吃的><','2023-02-11 18:04:40',0),(11,8,2,'121211','2023-02-11 19:48:31',0),(12,3,2,'12122','2023-02-11 20:52:56',1);
+/*!40000 ALTER TABLE `article_reply` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-02-14 16:27:40
