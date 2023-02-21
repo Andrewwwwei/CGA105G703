@@ -1,7 +1,7 @@
-<h1>7-tour旅遊網</h1>
+<h1>7Tour旅遊網</h1>
 <div><h3>簡介</h3>
 <p>提供使用者訂房、行程規劃、旅遊揪團、論壇討論的平台</p>
-<div>🎥 <a href="https://www.youtube.com/watch?v=Tl_DXhWUFOk&t=1618s">影片介紹</a> 📜 <a href="https://drive.google.com/file/d/1XtUt0F1rDTHjMEt67zOaiTftHDCd31QN/view">影片介紹</a></div>
+<div>🎥 <a href="https://www.youtube.com/watch?v=Tl_DXhWUFOk&t=1618s">影片介紹</a> 📜 <a href="https://drive.google.com/file/d/1XtUt0F1rDTHjMEt67zOaiTftHDCd31QN/view">文件介紹</a></div>
 </div>
 <div>
 <h3>技術</h3>
