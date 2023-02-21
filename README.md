@@ -37,6 +37,9 @@
 前台-發文頁面
 </th>
 <th>
+前台-單一文章頁面
+</th>
+<th>
 後台-論壇管理
 </th>
 </tr>
@@ -44,18 +47,19 @@
 <tbody>
 <tr>
 <td>
-<img src="https://user-images.githubusercontent.com/111410411/220287942-ae58ef89-6b31-4199-8ff7-787da7292f7b.png" width="100px" height:"100px">
+<img src="https://user-images.githubusercontent.com/111410411/220287942-ae58ef89-6b31-4199-8ff7-787da7292f7b.png" width="150px" height:"150px">
 </td>
 <td>
-<img src="https://user-images.githubusercontent.com/111410411/220285962-6ebdc232-fc0b-41a4-815b-28fd780aa5cf.png" width="100px" height:"100px">
+<img src="https://user-images.githubusercontent.com/111410411/220285962-6ebdc232-fc0b-41a4-815b-28fd780aa5cf.png" width="150px" height:"150px">
 </td>
 <td>
-<img src="https://user-images.githubusercontent.com/111410411/220286462-3fb87591-cef9-4dbe-a563-57151f2e6e03.png" width="100px" height:"100px">
+<img src="https://user-images.githubusercontent.com/111410411/220319896-6e506806-6bd8-4c46-b05d-cae2da545c4f.png" width="150px" height:"150px">
+</td>
+<td>
+<img src="https://user-images.githubusercontent.com/111410411/220286462-3fb87591-cef9-4dbe-a563-57151f2e6e03.png" width="150px" height:"150px">
 </td>
 </tr>
 </tbody>
 </table>
-
-
 
 
