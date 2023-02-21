@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>loading2</title>
+</head>
+<body>
+	<div id="border">
+		<div id="header">
+			你是機器人喵~~~<img id="twohairy"
+				src="./images/twohairy/twohairy0.jpg"
+				alt="" style="width: 200px;">
+			<p style="font-size: 16px; margin: 5px">請選取所有包含</p>
+			<h2 style="margin: 10px">二毛</h2>
+			<p style="font-size: 16px; margin: 5px">的圖案呦~~~~</p>
+			<p style="font-size: 16px; margin: 5px">如果沒有任何項目，請點選[略過]</p>
+		</div>
+		<div id="imgborder">
+			<img id="pic1" src="" alt=""> <img id="pic2" src="" alt="">
+			<img id="pic3" src="" alt=""> <img id="pic4" src="" alt="">
+			<img id="pic5" src="" alt=""> <img id="pic6" src="" alt="">
+			<img id="pic7" src="" alt=""> <img id="pic8" src="" alt="">
+			<img id="pic9" src="" alt="">
+		</div>
+		<svg id="repeat" xmlns="http://www.w3.org/2000/svg" width="26"
+			height="26" fill="currentColor" class="bi bi-arrow-repeat"
+			viewBox="0 0 16 16">
+    <path
+				d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+    <path fill-rule="evenodd"
+				d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+  </svg>
+		<input id="send" type="submit" onclick="sendTrue()">
+	</div>
+
+</body>
+<style>
+#border {
+	font-family: "微軟正黑體";
+	color: white;
+	position: relative;
+	width: 490px;
+	height: 680px;
+	border: 2px solid black;
+}
+
+#border #twohairy {
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+
+#border #imgborder {
+	position: absolute;
+	width: 500px;
+	left: 10px;
+	top: 215px;
+}
+
+#border #imgborder>img {
+	width: 155px;
+	height: 140px;
+}
+
+#border #repeat {
+	position: absolute;
+	right: 400px;
+	bottom: 5px;
+	color: black;
+}
+
+#border #send {
+	position: absolute;
+	right: 30px;
+	bottom: 5px;
+	width: 50px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+#border #header {
+	background-color: rgba(127, 159, 246, 0.985);
+	width: 472px;
+	height: 200px;
+	font-size: 30px;
+	margin: 10px 0 0 10px;
+}
+
+.change {
+	color: rgb(70, 91, 212);
+	box-shadow: 0px 0px 3px 3px rgb(238, 2, 2);
+}
+</style>
+<script>
+	function aaa() {
+		window.opener.document.getElementById('m').innerText = 'Window Closed';
+	}
+
+	let borderPic1 = document.querySelector("#pic1");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic1") {
+			borderPic1.className = 'change';
+		}
+	});
+	let borderPic2 = document.querySelector("#pic2");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic2") {
+			borderPic2.className = 'change';
+		}
+	});
+	let borderPic3 = document.querySelector("#pic3");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic3") {
+			borderPic3.className = 'change';
+		}
+	});
+	let borderPic4 = document.querySelector("#pic4");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic4") {
+			borderPic4.className = 'change';
+		}
+	});
+	let borderPic5 = document.querySelector("#pic5");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic5") {
+			borderPic5.className = 'change';
+		}
+	});
+	let borderPic6 = document.querySelector("#pic6");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic6") {
+			borderPic6.className = 'change';
+		}
+	});
+	let borderPic7 = document.querySelector("#pic7");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic7") {
+			borderPic7.className = 'change';
+		}
+	});
+	let borderPic8 = document.querySelector("#pic8");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic8") {
+			borderPic8.className = 'change';
+		}
+	});
+	let borderPic9 = document.querySelector("#pic9");
+	document.addEventListener("click", function(e) {
+		if (e.target.id == "pic9") {
+			borderPic9.className = 'change';
+		}
+	});
+	//=============================================================
+	let str = '';
+	let arr = [];
+	for (i = 0; i < 9; i++) {
+		str = Math.round(Math.random() * 8) + 1;
+		for (j = 0; j < arr.length; j++) {
+			if (arr[j] == str) {
+				arr.splice(j, 1);
+				i--;
+			}
+		}
+		arr.push(str);
+	}
+	borderPic1.src = `./images/twohairy/twohairy${arr[0]}.jpg`;
+	borderPic2.src = `./images/twohairy/twohairy${arr[1]}.jpg`;
+	borderPic3.src = `./images/twohairy/twohairy${arr[2]}.jpg`;
+	borderPic4.src = `./images/twohairy/twohairy${arr[3]}.jpg`;
+	borderPic5.src = `./images/twohairy/twohairy${arr[4]}.jpg`;
+	borderPic6.src = `./images/twohairy/twohairy${arr[5]}.jpg`;
+	borderPic7.src = `./images/twohairy/twohairy${arr[6]}.jpg`;
+	borderPic8.src = `./images/twohairy/twohairy${arr[7]}.jpg`;
+	borderPic9.src = `./images/twohairy/twohairy${arr[8]}.jpg`;
+	let total = 0;
+	borderPic1.value = `${arr[0]}`;
+	borderPic2.value = `${arr[1]}`;
+	borderPic3.value = `${arr[2]}`;
+	borderPic4.value = `${arr[3]}`;
+	borderPic5.value = `${arr[4]}`;
+	borderPic6.value = `${arr[5]}`;
+	borderPic7.value = `${arr[6]}`;
+	borderPic8.value = `${arr[7]}`;
+	borderPic9.value = `${arr[8]}`;
+	borderPic1.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic2.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic3.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic4.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic5.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic6.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic7.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic8.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	borderPic9.addEventListener('click', function(e) {
+		total1 = parseInt(e.target.value, 10);
+		total = total + total1;
+
+	});
+	function sendTrue() {
+		if (total == 10) {
+			window.opener.document.getElementById("loginform").submit();
+			window.close();
+		} else {
+			window.location.reload();
+		}
+	}
+	let repeat = document.getElementById("repeat").addEventListener('click',
+			function(e) {
+				window.location.reload();
+			});
+</script>
+
+</html>

@@ -1,0 +1,82 @@
+/* google字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+
+/* searchall css */
+
+body {
+
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h4 {
+    font-family: 'Noto Sans TC', sans-serif;
+    color      : #6a737c;
+    margin-top : 20px;
+
+}
+
+.sns-inner {
+    color        : aliceblue;
+    margin       : 0;
+    padding      : 0;
+    display      : flex;
+    justify-items: left;
+}
+
+.card {
+    object-fit     : cover;
+    border-radius  : 10;
+    border-radius  : 10px;
+    backdrop-filter: blur(10px);
+    opacity        : 0.9;
+    text-align     : left;
+    line-height    : 1;
+    font-size      : 13px;
+}
+
+
+.card-body {
+    text-align: left;
+
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icon-eye {
+    font-size: 15px;
+    color    : #6a737c;
+}
+
+.icon-heart {
+    font-size: 15px;
+    color    : #d85656;
+}
+
+.pagenav {
+    margin-top: 30px;
+}
+
+.Page-navigation {
+    opacity   : 0.9;
+    display   : block;
+    margin-top: 30;
+}
+
+.posartbtn .btn {
+    margin-top: 10px;
+}

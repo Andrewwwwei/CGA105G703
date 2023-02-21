@@ -1,0 +1,865 @@
+html {
+    font-family: "微軟正黑體";
+    background: #b2b4b226;
+}
+
+#login {
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 10PX;
+    width: 450px;
+    height: 850px;
+    position: relative;
+    margin: 50px auto 0 auto;
+    box-shadow: 0.1px 0.1px 10px 2px rgba(172, 167, 167, 0.158);
+    position: relative;
+}
+
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected {
+    -webkit-text-fill-color: #807c7c;
+    transition: background-color 5000s ease-out 0.5s;
+}
+
+#login #user_login {
+    font-size: 35px;
+    background: -webkit-linear-gradient(right, rgb(252, 0, 168), rgba(7, 42, 244, 0.397));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 50px;
+
+}
+
+
+/* =============================================================================================================== email*/
+#login #user_Email_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.change {
+    color: rgb(70, 91, 212);
+    box-shadow: 0px 0px 2px 2px rgb(70, 91, 212);
+}
+
+#login #user_Email_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_Email_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_Email_border #user_Email {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+
+}
+
+
+
+#login #user_Email_border #user_Email:focus {
+    outline: none;
+}
+
+
+
+#login #user_Email_border #user_Email_After::after {
+    position: absolute;
+    content: "\2003請輸入正確Email格式";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+
+}
+
+#login #user_Email_border #user_Email_After_block::after {
+    position: absolute;
+    content: "\2003請輸入6~40字元的英文加數字";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+
+}
+
+/* =============================================================================================================== 密碼*/
+#login #user_Password_border {
+    background: #d9d6d43a;
+    /* color: red; */
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+}
+
+#login #user_Password_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_Password_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_Password_border #user_Password {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+}
+
+
+
+#login #user_Password_border #user_Password:focus {
+    outline: none;
+}
+
+#login #user_Password_border #user_Password_After::after {
+    position: absolute;
+    content: "\2003密碼由英文與數字組成,最少六個字元";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_Password_border #user_Password_After_block::after {
+    position: absolute;
+    content: "\2003請輸入6~15字元的英文加數字";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+
+}
+
+/* =============================================================================================================== 再次輸入密碼*/
+#login #user_Password_angin_border {
+    background: #d9d6d43a;
+    /* color: red; */
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+#login #user_Password_angin_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_Password_angin_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_Password_angin_border #user_Password_angin {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+}
+
+
+
+#login #user_Password_angin_border #user_Password_angin:focus {
+    outline: none;
+}
+
+
+#login #user_Password_angin_border #user_Password_angin_After::after {
+    position: absolute;
+    content: "\2003密碼兩次輸入內容不符合";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_Password_angin_border #user_Password_angin_After_block::after {
+    position: absolute;
+    content: "\2003請輸入與上一欄一樣的密碼";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 名稱*/
+#login #user_Name_border {
+    background: #d9d6d43a;
+    /* color: red; */
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+}
+
+#login #user_Name_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_Name_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_Name_border #user_Name {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+}
+
+
+
+#login #user_Name_border #user_Name:focus {
+    outline: none;
+}
+
+
+#login #user_Name_border #user_Name_After::after {
+    position: absolute;
+    content: "\2003請輸入中文格式,至少兩字";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_Name_border #user_Name_After_block::after {
+    position: absolute;
+    content: "\2003請輸入中文姓名";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 暱稱*/
+#login #user_NickName_border {
+    background: #d9d6d43a;
+    /* color: red; */
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+}
+
+#login #user_NickName_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_NickName_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_NickName_border #user_NickName {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+}
+
+
+
+#login #user_NickName_border #user_NickName:focus {
+    outline: none;
+}
+
+#login #user_NickName_border #user_NickName_After_block::after {
+    position: absolute;
+    content: "\2003匿名必須由1~10個中文字、數字、符號、英文組成";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+
+/* =============================================================================================================== 身分證字號*/
+#login #user_ID_Number_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+}
+
+#login #user_ID_Number_border>label {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_ID_Number_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_ID_Number_border #user_ID_Number {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+}
+
+
+
+#login #user_ID_Number_border #user_ID_Number:focus {
+    outline: none;
+}
+
+#login #user_ID_Number_border #user_ID_Number_After::after {
+    position: absolute;
+    content: "\2003請輸入正確身分證格式";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_ID_Number_border #user_ID_Number_After_block::after {
+    position: absolute;
+    content: "\2003匿名必須由1~10個中文字、數字、符號、英文組成";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 生日*/
+#login #user_Birthday_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+#login #user_Birthday_border>label {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+
+}
+
+#login #user_Birthday_border #text {
+
+    font-size: 13.5px;
+    color: #787373;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 0px;
+
+}
+
+#login #user_Birthday_border>label>#div {
+    position: absolute;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+
+
+}
+
+#login #user_Birthday_border #user_Birthday {
+    display: inline-block;
+    width: 150px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+    position: absolute;
+    left: 100px;
+
+}
+
+
+
+#login #user_Birthday_border #user_Birthday:focus {
+    outline: none;
+}
+
+#login #user_Birthday_border #user_Birthday_After::after {
+    position: absolute;
+    content: "\2003請輸入生日";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_Birthday_border #user_Birthday_After_block::after {
+    position: absolute;
+    content: "\2003生日可以手動輸入或點選輸入";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 電話號碼*/
+#login #user_Phone_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+#login #user_Phone_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_Phone_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+
+}
+
+#login #user_Phone_border #user_Phone {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+
+}
+
+
+
+#login #user_Phone_border #user_Phone:focus {
+    outline: none;
+}
+
+
+#login #user_Phone_border #user_Phone_After::after {
+    position: absolute;
+    content: "\2003請輸入手機號碼(例:0912345678)";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_Phone_border #user_Phone_After_block::after {
+    position: absolute;
+    content: "\2003請輸入十碼阿拉伯數字(例:0912345678)";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 地址*/
+#login #user_Address_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 80px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+#login #user_Address_border>label {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+
+
+#login #user_Address_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#login #user_Address_border #user_Address {
+    position: absolute;
+    width: 220px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+    border: 1px solid lightgray;
+    top: 30px;
+    left: 10px
+}
+
+
+
+#login #user_Address_border #user_Address:focus {
+    outline: none;
+}
+
+#login #user_Address_border #user_Address_After::after {
+    position: absolute;
+    content: "\2003請輸入地址";
+    background: #1315143a;
+    color: red;
+    line-height: 40px;
+    width: 250px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+#login #user_Address_border #user_Address_After_block::after {
+    position: absolute;
+    content: "\2003地址由中文、英文與數字組成";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 性別*/
+#login #user_Gender_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+#login #user_Gender_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+#login #user_Gender_border>label>div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+
+}
+
+#login #user_Gender_border #user_Gender {
+    width: 222px;
+    height: 38px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+
+}
+
+
+
+#login #user_Gender_border #user_Gender:focus {
+    outline: none;
+}
+
+
+#login #user_Gender_border #user_Gender_After_block::after {
+    position: absolute;
+    content: "\2003請輸入性別參與專屬團別";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 頭像*/
+#login #user_file_border {
+    background: #d9d6d43a;
+    width: 250px;
+    height: 40px;
+    margin: 15px 0px 0px 50px;
+    border: 1px solid#d9d6d4;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+#login #user_file_border>label {
+
+    /* display: inline-block; */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    display: inline-block;
+
+
+}
+
+#login #user_file_border>label>div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    top: 10px;
+}
+
+#login #user_file_border #user_file {
+
+    display: none;
+
+}
+
+#login #user_file_border #btn {
+
+    position: absolute;
+
+
+    display: inline-block;
+
+}
+
+#login #user_file_border #btn #text {
+
+    font-size: 13.5px;
+    color: #787373;
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+
+}
+
+#login #user_file_border #user_file:focus {
+    outline: none;
+}
+
+#login #user_file_border #preview_img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 10px 0px;
+    border-color: transparent;
+    left: 180px;
+
+}
+
+#login #user_file_border #user_file_After_block::after {
+    position: absolute;
+    content: "\2003上傳頭像讓個人資料更具風格";
+    background: #d2d3d379;
+    color: black;
+    line-height: 40px;
+    width: 290px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    top: 0px;
+    left: 270px;
+}
+
+/* =============================================================================================================== 送出*/
+#login #login_Submit {
+    font-size: 35px;
+    background: -webkit-linear-gradient(right, rgb(218, 150, 195), rgba(70, 91, 212, 0.736));
+    position: absolute;
+    -webkit-text-fill-color: white;
+    margin: 20px 0px 0px auto;
+
+    border: solid 1px rgb(193, 73, 73);
+    border-radius: 10PX;
+    position: relative;
+    left: calc(50% - 77px);
+}
+
+#login #login_Submit:hover {
+    cursor: pointer;
+
+}
+
+/* =============================================================================================================== */

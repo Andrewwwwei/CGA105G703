@@ -1,0 +1,204 @@
+#logo{
+  width:86px;
+  height: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.bg-cblue{
+  background-color: #7db2e4;
+}
+
+.bg-dblue{
+  background-color: #2670b4;
+}
+
+.hover-down{
+  position: relative;
+  border-radius: 10px;
+}
+
+.hover-down:hover{
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.hover-down:hover .hover-list{
+  display: block;
+  z-index: 999;
+}
+
+
+
+.hover-list{
+  display:none;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  position:absolute;
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+}
+
+.hover-item{
+  text-decoration: none;
+  color:black;
+  display: block;
+  padding:5px 5px;
+}
+.hover-item:hover{
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.nav-link{
+  width: 150px;
+  text-align: center;
+}
+
+.slide-pic{
+  height:400px;
+}
+
+.btn-primary{
+  border-radius: 0px 5px 5px 0px;
+}
+
+.form-control{
+  border-radius: 5px 0px 0px 5px;
+}
+
+.pic-searchbar{
+  position: relative;
+  top: -100px;
+}
+
+.pic-text{
+  transform: translateY(-100%);
+  line-height: 110px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.area-content{
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  flex-wrap: nowrap;
+}
+
+.fixed-w-h{
+  height: 110px; 
+  width: 190px;
+}
+
+.a-style{
+  font-weight: 700;
+  font-size: large;
+  color: #5ba6eb;
+  line-height: 50px;
+  vertical-align: bottom;
+}
+
+.a-style:hover{
+  color: #1c85e7;
+  text-decoration: underline;
+}
+
+.fade-area{
+  opacity: 1;
+}
+
+.fade-area:hover{
+  opacity: 0.5;
+}
+
+.user-pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.like-icon{
+  color: lightgray;
+}
+
+.like-icon:hover{
+  cursor: pointer;
+  color: #1c85e7;
+}
+
+.ct-text{
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+.chat-icon{
+  position: fixed;
+  z-index: 5;
+  right: 5%;
+}
+
+.user-msg{
+  position: relative;
+}
+
+.msg-list{
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  width: 300px;
+  border-radius: 10px;
+  display: none;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.msg-item{
+  display: block;
+  padding: 10px;
+}
+
+.msg-icon:hover{
+  cursor: pointer;
+}
+
+.user-msg:hover .msg-list{
+  display: block;
+}
+
+.msg-item:hover{
+  cursor:pointer;
+  background-color: #fff;
+}
+
+
+.info-list{
+  list-style:none;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  right: 0;
+  border-radius: 10px;
+  display: none;
+  overflow: hidden;
+}
+
+.info-item{
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+}
+
+.user-info:hover .info-list{
+  display: block;
+}
+
+.info-item:hover{
+  background-color: #fff;
+}

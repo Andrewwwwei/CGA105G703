@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body {
+	background-color: #F0F0F0;
+}
+
+
+
+.mainPage {
+	width: 1100px;
+	margin-left: 330px;
+	margin-top: 30px;
+}
+
+.maintop {
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+}
+
+.maintop>h3 {
+	margin-top: 25px;
+}
+
+.info-button {
+	text-align: right;
+}
+
+#search-btn, #insert-btn {
+	margin-right: 10px;
+}
+
+.dataTables_filter {
+	text-align: right !important;
+}
+
+table {
+	margin-top: 10px;
+	text-align: center;
+	table-layout:fixed;
+}
+
+
+
+td {
+	vertical-align: middle;
+}
+
+.horizon {
+	margin-top: 15px;
+	width: 1100px;
+	background-color: black;
+}
+
+.decPics {
+	width: 500px;
+}
+
+.dttop, .dtbottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ #listTable_filter>label{
+ 	margin-right:10px;
+ }
+ 
+  #listTable_filter>input{
+ 	margin-left:10px;
+ }
+
+#listTable_length>label , #listTable_filter>label {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap; /* 避免文字換行 */
+}
+
+.form-select {
+	margin-left: 10px;
+	margin-right: 10px;
+}

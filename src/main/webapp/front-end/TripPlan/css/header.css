@@ -1,0 +1,129 @@
+#logo {
+  width:106px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bg-cblue {
+  background-color: #7db2e4;
+}
+
+.cblue{
+  color: #7db2e4;
+}
+
+.bg-dblue {
+  background-color: #2670b4;
+}
+
+.hover-down {
+  position: relative;
+  border-radius: 10px;
+}
+
+.hover-down:hover {
+  background-color: #fff;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.hover-down:hover .hover-list {
+  display: block;
+  z-index: 999;
+}
+
+.hover-list {
+  display: none;
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  position: absolute;
+}
+
+.hover-item {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 0px;
+}
+
+.hover-item:hover {
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.nav-link {
+  width: 150px;
+  text-align: center;
+}
+
+.user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-msg {
+  position: relative;
+}
+
+.msg-list {
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  width: 300px;
+  border-radius: 10px;
+  display: none;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.msg-item {
+  display: block;
+  padding: 10px;
+}
+
+.msg-icon:hover {
+  cursor: pointer;
+}
+
+.user-msg:hover .msg-list {
+  display: block;
+}
+
+.msg-item:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  right: 0;
+  border-radius: 10px;
+  display: none;
+  overflow: hidden;
+}
+
+.info-item {
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 10px;
+}
+
+.user-info:hover .info-list {
+  display: block;
+}
+
+.info-item:hover {
+  background-color: #fff;
+}

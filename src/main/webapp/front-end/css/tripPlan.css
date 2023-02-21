@@ -1,0 +1,188 @@
+body {
+  overflow: hidden;
+}
+
+.trip-time {
+  position: relative;
+  top: -40%;
+  border: 0;
+}
+
+.trip-in {
+  border: none;
+}
+
+.date-btn {
+  border: none;
+  height: 40px;
+}
+
+.trip-btn {
+  color: black;
+}
+
+.trip-btn:hover {
+  color: white;
+  background-color: #2670b4;
+
+}
+
+button.active {
+  color: white;
+  background-color: #2670b4;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #abcae7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2670b4;
+}
+
+.locInfo-title {
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.newLoc-input {
+  margin: 0% 0 5% 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.newLoc-input:focus {
+  outline: 5px solid rgba(38, 112, 180, 0.8);
+}
+
+#mem-notes {
+  position: absolute;
+  height: calc(100% - 66px);
+  top: 66px;
+  right: 25%;
+  display: none;
+  z-index: 10;
+}
+
+.mbr-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#note-input {
+  margin: 0% 0 5% 0;
+  padding: 10px;
+  background-color: lightblue;
+  border: 0;
+  width: 100%;
+  height: 400px;
+  resize: none;
+}
+
+#note-input:focus {
+  outline: none;
+}
+
+#mbr-chat {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 50%;
+  display: none;
+  z-index: 10;
+}
+
+.trip-msg {
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+  width: 50%;
+  word-wrap: break-word;
+  margin: 0 0 0 2%;
+  border-radius: 10px;
+}
+
+#msg-content{
+  height: calc(100% - 70px);
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+
+#msg-input{
+  border-radius: 15px;
+  padding: 3px;
+  width: 80%;
+}
+
+#mbrMsg-icon{
+  position: absolute;
+  top: 80%;
+  right:5%;
+  z-index: 10;
+}
+
+#mbrMsg-icon:hover{
+  color: #2670b4;
+}
+
+#open-join{
+  position: absolute;
+  top: 90px;
+  right:5%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #2670b4;
+  color: white;
+  z-index: 10;
+}
+
+#open-join:hover{
+  background-color: #abcae7;
+  color: black;
+}
+
+#invite{
+  position: absolute;
+  top: 90px;
+  right:calc(5% + 100px);
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #2670b4;
+  color: white;
+  z-index: 10;
+}
+
+#invite:hover{
+  background-color: #abcae7;
+  color: black;
+}
+
+#map{
+  position: absolute;
+  top: 66px;
+  left: 25%;
+  width: 75%;
+  height: calc(100% - 66px);
+  z-index: 1;
+}
+
+#loc-info{
+  z-index: 20;
+}
+
+.modal-backdrop{
+  z-index: 15;
+  opacity: 0 !important;
+}

@@ -1,0 +1,4 @@
+.tripCard:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 10px gray;
+}

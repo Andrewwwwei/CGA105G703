@@ -1,0 +1,24 @@
+.bg-cblue{
+  background-color: #7db2e4;
+}
+
+.bg-dblue{
+  background-color: #2670b4;
+}
+
+.bg-lblue{
+  background-color: #041427;	
+}
+
+.del-img{
+  position: absolute;
+  right: 0;
+  bottom:0;
+  width:50px;
+  margin:0;
+  z-index:5;
+}
+
+#table-id tr:nth-child(odd) {
+  background-color: lightblue;
+}

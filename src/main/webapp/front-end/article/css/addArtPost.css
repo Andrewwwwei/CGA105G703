@@ -1,0 +1,142 @@
+html {
+	overflow: scroll;
+	overflow-X: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-family: Geneva, Verdana, sans-serif;
+	background: rgba(255, 255, 255, 0.3);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.error {
+	text-align: start;
+	margin-top: 10px;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+		Arial, sans-serif;
+}
+
+.error>font {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.post-box {
+	width: 900px;
+	height: auto;
+	margin: 70px auto;
+	padding: 0 2%;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.655);
+	opacity: 0.9;
+	border-radius: 10px;
+	border: 1px solid rgba(173, 167, 198, 0.788);
+	box-shadow: 0 15px 25px rgba(115, 115, 124, 0.6);
+	box-sizing: border-box;
+}
+
+.post-box .post-header {
+	background: #ED4264; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFEDBC, #ED4264);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	border-radius: 20px;
+	opacity: 0.8;
+	box-shadow: 0 2px 2px rgba(164, 164, 170, 0.6);
+}
+
+.post-header a {
+	font-weight: bold;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+		Arial, sans-serif;
+	position: absolute;
+	bottom: -25px;
+	left: 390px;
+	font-size: 0.9em;
+}
+
+.post-box h3 {
+	margin-top: 30px;
+	padding: 0;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-shadow: 0 0 2px rgb(60, 52, 52);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	line-height: 220px;
+	font-size: 2.5em;
+	filter: drop-shadow(0 0 2px #000);
+}
+
+.post-box .title input {
+	width: 100%;
+	font-size: 18px;
+	color: rgb(52, 78, 93);
+	margin-bottom: 15px;
+	border: none;
+	border-bottom: 1px solid rgb(86, 41, 42);
+	outline: none;
+	background: transparent;
+}
+
+.post-box .radios {
+	text-align: start;
+	margin-top: 10px;
+}
+
+.post-box .ckeditor {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: rgb(52, 78, 93);
+	margin-bottom: 20px;
+	margin-top: 10px;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+input[type='submit'] {
+	padding: 10px 20px;
+	color: #758851;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+	letter-spacing: 4px;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+input[type='submit']:hover {
+	opacity: 0.8;
+	box-shadow: 0 0 5px #a1a1a1;
+}
+
+#container {
+	width: auto;
+	margin: auto;
+	height: auto;
+	border-radius: 5px;
+}
+
+.ck-editor__editable[role="textbox"] {
+	/* editing area */
+	min-height: 250px;
+	max-height: 300px;
+}
+
+.ck-content .image {
+	/* block images */
+	max-width: 80%;
+	margin: 20px auto;
+}

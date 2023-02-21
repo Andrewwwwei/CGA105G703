@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+body {
+	background-color: #F0F0F0;
+}
+
+.mainPage {
+	width: 1100px;
+	margin-left: 330px;
+	margin-top: 30px;
+}
+
+.maintop {
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	border-radius: 10px;
+	background-color: #DEE4EC !important;
+}
+
+.maintop>h3 {
+	margin-top: 25px;
+}
+
+.info-button {
+	text-align: right;
+}
+
+#search-btn, #insert-btn {
+	margin-right: 10px;
+}
+
+#modal-body {
+	height: 500px;
+}
+
+#location {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 40%;
+}
+
+#member {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: 60%;
+}
+
+#list-header {
+	text-align: center;
+	margin: 10px 0;
+}
+
+#list-label {
+	margin: 10px 0 0 0;
+}
+
+.p-header {
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.input-header {
+	height: 50%;
+}
+
+.scrollable {
+	overflow: auto;
+	height: 200px;
+}
+
+.ulocation {
+	margin: 5px 0 0 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	display: flex;
+}
+
+#list-input {
+	flex: 50%;
+}
+
+.dataTables_filter {
+	text-align: right !important;
+}
+
+table {
+	margin-top: 10px;
+	text-align: center;
+}
+
+td {
+	vertical-align: middle;
+}
+
+.horizon {
+	margin-top: 15px;
+	width: 99%;
+	background-color: black;
+}
+
+.decPics {
+	width: 500px;
+}
+
+.dttop, .dtbottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dttop, .dtbottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#listTable_filter>label {
+	margin-right: 10px;
+}
+
+#listTable_filter>input {
+	margin-left: 10px;
+}
+
+#listTable_length>label, #listTable_filter>label {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap; /* 避免文字換行 */
+}
+
+.list-contnet {
+	text-align: center;
+	margin: 5px 0;
+}
+
+#list-label {
+	margin-left: 20px;
+}
+
+.form-select {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.hoverable {
+	opacity: 0.7;
+	transition: all 0.1s ease-in-out;
+}
+
+.hoverable:hover {
+	opacity: 1;
+	background-color: #EEEEEE;
+	border: 2px solid #BDBDBD;
+}
+
+.ulocation {
+	transition: .3s;
+}
+
+#location:hover>:not(:hover) {
+	opacity: .4;
+}
+
+.ulocation>label {
+	transition: border .1s ease-out;
+}
+
+.ulocation>label:hover {
+	/* 	 box-shadow: 4px 4px 3px -4px currentColor; */
+	box-shadow: 4px 4px 3px -2px currentColor;
+	border: 3px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	background-color: white;
+	opacity: 0.5;
+	z-index: 9998;
+}
+
+#load {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	z-index: 9999;
+}
