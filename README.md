@@ -2,14 +2,7 @@
 <div><h3>簡介</h3>
 <p>提供使用者訂房、行程規劃、旅遊揪團、論壇討論的平台</p>
 <div>🎥 <a href="https://www.youtube.com/watch?v=Tl_DXhWUFOk&t=1618s">影片介紹</a> 📜 <a href="https://drive.google.com/file/d/1XtUt0F1rDTHjMEt67zOaiTftHDCd31QN/view">文件介紹</a></div>
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaXd1XAzo&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-簡愷威 設計的 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaXd1XAzo&#x2F;view?utm_content=DAFaXd1XAzo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">CGA10503簡愷威</a>
+</div> <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaXd1XAzo&#x2F;view?utm_content=DAFaXd1XAzo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">CGA10503簡愷威</a>
 </div>
 <div>
 <h3>技術</h3>
