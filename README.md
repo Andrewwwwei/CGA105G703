@@ -2,7 +2,7 @@
 <div><h3>簡介</h3>
 <p>提供使用者訂房、行程規劃、旅遊揪團、論壇討論的平台</p>
 <div>🎥 <a href="https://www.youtube.com/watch?v=Tl_DXhWUFOk&t=1618s">影片介紹</a> 📜 <a href="https://drive.google.com/file/d/1XtUt0F1rDTHjMEt67zOaiTftHDCd31QN/view">文件介紹</a>
-  <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaXd1XAzo&#x2F;view?utm_content=DAFaXd1XAzo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">個人簡報</a>
+ 💡 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFaXd1XAzo&#x2F;view?utm_content=DAFaXd1XAzo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">個人簡報</a>
   </div>
 </div>
 </div>
